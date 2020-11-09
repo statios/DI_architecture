@@ -47,7 +47,6 @@ class Dependencies: DependenciesType {
     self.dependencies.forEach { dependency in
       let index = AppRepository.shared.dependencies.firstIndex { $0.name == dependency.name }
       if let index = index {
-        print(index)
         AppRepository.shared.dependencies[index].remove()
         AppRepository.shared.dependencies.remove(at: index)
         print("remove \(dependency.name)")

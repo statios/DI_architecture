@@ -7,14 +7,12 @@
 
 @propertyWrapper
 struct Injected<Dependency> {
-
-  var dependency: Dependency! // resolved dependency
-
+  
+  var dependency: Dependency!
+  
   var wrappedValue: Dependency {
     mutating get {
-      
       if dependency == nil {
-        
         let copy: Dependency = AppRepository.shared.resolve()
         self.dependency = copy
       }
@@ -23,5 +21,5 @@ struct Injected<Dependency> {
       dependency = newValue
     }
   }
-
+  
 }

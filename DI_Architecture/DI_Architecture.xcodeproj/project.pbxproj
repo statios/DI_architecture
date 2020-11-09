@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF156A812558CC8C0023BFE3 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF156A802558CC8C0023BFE3 /* ViewController2.swift */; };
 		AF8D5F81255845A800B15B67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8D5F80255845A800B15B67 /* AppDelegate.swift */; };
 		AF8D5F83255845A800B15B67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8D5F82255845A800B15B67 /* SceneDelegate.swift */; };
 		AF8D5F85255845A800B15B67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8D5F84255845A800B15B67 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF156A802558CC8C0023BFE3 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		AF8D5F7D255845A800B15B67 /* DI_Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DI_Architecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF8D5F80255845A800B15B67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF8D5F82255845A800B15B67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				AF8D5F80255845A800B15B67 /* AppDelegate.swift */,
 				AF8D5F82255845A800B15B67 /* SceneDelegate.swift */,
 				AF8D5F84255845A800B15B67 /* ViewController.swift */,
+				AF156A802558CC8C0023BFE3 /* ViewController2.swift */,
 				AF8D5F86255845A800B15B67 /* Main.storyboard */,
 				AF8D5F89255845AA00B15B67 /* Assets.xcassets */,
 				AF8D5F8B255845AA00B15B67 /* LaunchScreen.storyboard */,
@@ -279,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF8D5FC4255845E300B15B67 /* AppRepository.swift in Sources */,
+				AF156A812558CC8C0023BFE3 /* ViewController2.swift in Sources */,
 				AF8D5FBF255845D900B15B67 /* Dependencies.swift in Sources */,
 				AF8D5F85255845A800B15B67 /* ViewController.swift in Sources */,
 				AF8D5FBA255845C800B15B67 /* Dependency.swift in Sources */,

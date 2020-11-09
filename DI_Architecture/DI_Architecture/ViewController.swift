@@ -12,10 +12,12 @@ class ViewController: UIViewController {
   let dp = Dependencies {
     Dependency { A() }
     Dependency { B() }
+    Dependency { ViewController2() }
   }
   
   @Injected var aClass: A
   @Injected var bClass: B
+  @Injected var vc2: ViewController2
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -24,27 +26,26 @@ class ViewController: UIViewController {
 
   @IBAction func register(_ sender: Any) {
     dp.register()
-    print(AppRepository.shared.dependencies)
   }
   
   @IBAction func remove(_ sender: Any) {
     dp.remove()
-    print(AppRepository.shared.dependencies)
   }
   
   @IBAction func callA(_ sender: Any) {
-    print(aClass.title)
-    print(AppRepository.shared.dependencies)
+    print(aClass)
   }
   
   @IBAction func callB(_ sender: Any) {
     print(bClass)
-    print(AppRepository.shared.dependencies)
+  }
+  
+  @IBAction func present(_ sender: Any) {
+    present(vc2, animated: true)
   }
 }
 
 class A {
-  let title = "THISISA"
   init() {
     print("class a init")
   }

@@ -8,7 +8,7 @@
 struct Dependency {
   typealias ResolveBlock<T> = () -> T
 
-  private(set) var value: Any!
+  private(set) var value: Any?
   private let resolveBlock: ResolveBlock<Any>
   let name: String
 
