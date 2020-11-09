@@ -6,18 +6,12 @@
 //
 
 import UIKit
+import Resolver
 
 class ViewController: UIViewController {
-
-  let dp = Dependencies {
-    Dependency { A() }
-    Dependency { B() }
-    Dependency { ViewController2() }
-  }
   
-  @Injected var aClass: A
-  @Injected var bClass: B
-  @Injected var vc2: ViewController2
+  @LazyInjected var aClass: A
+  @LazyInjected var bClass: B
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -25,11 +19,12 @@ class ViewController: UIViewController {
   }
 
   @IBAction func register(_ sender: Any) {
-    dp.register()
+    
   }
   
   @IBAction func remove(_ sender: Any) {
-    dp.remove()
+    print("remove")
+    Resolver.session.reset()
   }
   
   @IBAction func callA(_ sender: Any) {
@@ -41,24 +36,6 @@ class ViewController: UIViewController {
   }
   
   @IBAction func present(_ sender: Any) {
-    present(vc2, animated: true)
-  }
-}
-
-class A {
-  init() {
-    print("class a init")
-  }
-  deinit {
-    print("class a deinit")
-  }
-}
-
-class B {
-  init() {
-    print("class b init")
-  }
-  deinit {
-    print("class b deinit")
+    present(ViewController2(), animated: true)
   }
 }

@@ -3,11 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		AF156A812558CC8C0023BFE3 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF156A802558CC8C0023BFE3 /* ViewController2.swift */; };
+		AF156AC6255918650023BFE3 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = AF156AC5255918650023BFE3 /* Resolver */; };
+		AF156AD0255918CD0023BFE3 /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF156ACF255918CD0023BFE3 /* Classes.swift */; };
+		AF156ADB25591BAB0023BFE3 /* AppDelegate+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF156ADA25591BAB0023BFE3 /* AppDelegate+Injection.swift */; };
 		AF8D5F81255845A800B15B67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8D5F80255845A800B15B67 /* AppDelegate.swift */; };
 		AF8D5F83255845A800B15B67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8D5F82255845A800B15B67 /* SceneDelegate.swift */; };
 		AF8D5F85255845A800B15B67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8D5F84255845A800B15B67 /* ViewController.swift */; };
@@ -16,9 +19,6 @@
 		AF8D5F8D255845AA00B15B67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF8D5F8B255845AA00B15B67 /* LaunchScreen.storyboard */; };
 		AF8D5F98255845AA00B15B67 /* DI_ArchitectureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8D5F97255845AA00B15B67 /* DI_ArchitectureTests.swift */; };
 		AF8D5FA3255845AA00B15B67 /* DI_ArchitectureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8D5FA2255845AA00B15B67 /* DI_ArchitectureUITests.swift */; };
-		AF8D5FB5255845C200B15B67 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8D5FB4255845C200B15B67 /* Injected.swift */; };
-		AF8D5FBA255845C800B15B67 /* Dependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8D5FB9255845C800B15B67 /* Dependency.swift */; };
-		AF8D5FBF255845D900B15B67 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8D5FBE255845D900B15B67 /* Dependencies.swift */; };
 		AF8D5FC4255845E300B15B67 /* AppRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8D5FC3255845E300B15B67 /* AppRepository.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		AF156A802558CC8C0023BFE3 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		AF156ACF255918CD0023BFE3 /* Classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
+		AF156ADA25591BAB0023BFE3 /* AppDelegate+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Injection.swift"; sourceTree = "<group>"; };
 		AF8D5F7D255845A800B15B67 /* DI_Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DI_Architecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF8D5F80255845A800B15B67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF8D5F82255845A800B15B67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,9 +57,6 @@
 		AF8D5F9E255845AA00B15B67 /* DI_ArchitectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DI_ArchitectureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF8D5FA2255845AA00B15B67 /* DI_ArchitectureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI_ArchitectureUITests.swift; sourceTree = "<group>"; };
 		AF8D5FA4255845AA00B15B67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF8D5FB4255845C200B15B67 /* Injected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
-		AF8D5FB9255845C800B15B67 /* Dependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependency.swift; sourceTree = "<group>"; };
-		AF8D5FBE255845D900B15B67 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
 		AF8D5FC3255845E300B15B67 /* AppRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF156AC6255918650023BFE3 /* Resolver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +86,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF156AC0255918380023BFE3 /* etc */ = {
+			isa = PBXGroup;
+			children = (
+				AF8D5F80255845A800B15B67 /* AppDelegate.swift */,
+				AF156ADA25591BAB0023BFE3 /* AppDelegate+Injection.swift */,
+				AF8D5F82255845A800B15B67 /* SceneDelegate.swift */,
+				AF8D5F86255845A800B15B67 /* Main.storyboard */,
+				AF8D5F89255845AA00B15B67 /* Assets.xcassets */,
+				AF8D5F8B255845AA00B15B67 /* LaunchScreen.storyboard */,
+				AF8D5F8E255845AA00B15B67 /* Info.plist */,
+			);
+			path = etc;
+			sourceTree = "<group>";
+		};
 		AF8D5F74255845A800B15B67 = {
 			isa = PBXGroup;
 			children = (
@@ -110,14 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				AF8D5FB3255845BC00B15B67 /* DI */,
-				AF8D5F80255845A800B15B67 /* AppDelegate.swift */,
-				AF8D5F82255845A800B15B67 /* SceneDelegate.swift */,
-				AF8D5F84255845A800B15B67 /* ViewController.swift */,
-				AF156A802558CC8C0023BFE3 /* ViewController2.swift */,
-				AF8D5F86255845A800B15B67 /* Main.storyboard */,
-				AF8D5F89255845AA00B15B67 /* Assets.xcassets */,
-				AF8D5F8B255845AA00B15B67 /* LaunchScreen.storyboard */,
-				AF8D5F8E255845AA00B15B67 /* Info.plist */,
+				AF156AC0255918380023BFE3 /* etc */,
 			);
 			path = DI_Architecture;
 			sourceTree = "<group>";
@@ -144,9 +151,9 @@
 			isa = PBXGroup;
 			children = (
 				AF8D5FC3255845E300B15B67 /* AppRepository.swift */,
-				AF8D5FB4255845C200B15B67 /* Injected.swift */,
-				AF8D5FB9255845C800B15B67 /* Dependency.swift */,
-				AF8D5FBE255845D900B15B67 /* Dependencies.swift */,
+				AF8D5F84255845A800B15B67 /* ViewController.swift */,
+				AF156A802558CC8C0023BFE3 /* ViewController2.swift */,
+				AF156ACF255918CD0023BFE3 /* Classes.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -167,6 +174,9 @@
 			dependencies = (
 			);
 			name = DI_Architecture;
+			packageProductDependencies = (
+				AF156AC5255918650023BFE3 /* Resolver */,
+			);
 			productName = DI_Architecture;
 			productReference = AF8D5F7D255845A800B15B67 /* DI_Architecture.app */;
 			productType = "com.apple.product-type.application";
@@ -238,6 +248,9 @@
 				Base,
 			);
 			mainGroup = AF8D5F74255845A800B15B67;
+			packageReferences = (
+				AF156AC4255918650023BFE3 /* XCRemoteSwiftPackageReference "Resolver" */,
+			);
 			productRefGroup = AF8D5F7E255845A800B15B67 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -281,14 +294,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF156AD0255918CD0023BFE3 /* Classes.swift in Sources */,
 				AF8D5FC4255845E300B15B67 /* AppRepository.swift in Sources */,
 				AF156A812558CC8C0023BFE3 /* ViewController2.swift in Sources */,
-				AF8D5FBF255845D900B15B67 /* Dependencies.swift in Sources */,
+				AF156ADB25591BAB0023BFE3 /* AppDelegate+Injection.swift in Sources */,
 				AF8D5F85255845A800B15B67 /* ViewController.swift in Sources */,
-				AF8D5FBA255845C800B15B67 /* Dependency.swift in Sources */,
 				AF8D5F81255845A800B15B67 /* AppDelegate.swift in Sources */,
 				AF8D5F83255845A800B15B67 /* SceneDelegate.swift in Sources */,
-				AF8D5FB5255845C200B15B67 /* Injected.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,7 +478,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4YL8LS5ZJC;
-				INFOPLIST_FILE = DI_Architecture/Info.plist;
+				INFOPLIST_FILE = DI_Architecture/etc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -485,7 +497,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4YL8LS5ZJC;
-				INFOPLIST_FILE = DI_Architecture/Info.plist;
+				INFOPLIST_FILE = DI_Architecture/etc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -621,6 +633,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AF156AC4255918650023BFE3 /* XCRemoteSwiftPackageReference "Resolver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Resolver";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AF156AC5255918650023BFE3 /* Resolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF156AC4255918650023BFE3 /* XCRemoteSwiftPackageReference "Resolver" */;
+			productName = Resolver;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AF8D5F75255845A800B15B67 /* Project object */;
 }
